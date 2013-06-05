@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rotateAnimTime">175</integer>
+    <integer name="bounceAnimTime">120</integer>
+    <integer name="activity_anim_duration">300</integer>
+</resources>

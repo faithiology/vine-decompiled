@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/empty" layout="@layout/sadface_empty" />
+    <LinearLayout android:orientation="vertical" android:id="@id/real_sadface" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="center" android:id="@id/sadface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/background_sadface" android:layout_weight="0.7" />
+        <co.vine.android.widget.TypefacesTextView android:layout_gravity="center" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.3" style="@style/Byline" />
+    </LinearLayout>
+</LinearLayout>

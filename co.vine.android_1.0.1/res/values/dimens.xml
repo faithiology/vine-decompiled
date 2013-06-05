@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_row_padding">10.0dip</dimen>
+    <dimen name="font_size_default">16.0sp</dimen>
+    <dimen name="standard_spacing">6.0dip</dimen>
+    <dimen name="standard_spacing_large">11.0dip</dimen>
+    <dimen name="user_image_size">48.0dip</dimen>
+    <dimen name="user_image_size_large">90.0dip</dimen>
+    <dimen name="font_size_xlarge">18.0sp</dimen>
+    <dimen name="font_size_xxlarge">20.0sp</dimen>
+    <dimen name="font_size_xxxlarge">24.0sp</dimen>
+    <dimen name="font_size_large">16.0sp</dimen>
+    <dimen name="font_size_medium">14.0sp</dimen>
+    <dimen name="font_size_small">12.0sp</dimen>
+    <dimen name="font_size_micro">10.0sp</dimen>
+    <dimen name="spacing_half_micro">2.0dip</dimen>
+    <dimen name="spacing_micro">4.0dip</dimen>
+    <dimen name="spacing_small">12.0dip</dimen>
+    <dimen name="spacing_medium">24.0dip</dimen>
+    <dimen name="spacing_medium_capture">18.0dip</dimen>
+    <dimen name="spacing_large">48.0dip</dimen>
+    <dimen name="spacing_xlarge">72.0dip</dimen>
+    <dimen name="spacing_xxlarge">92.0dip</dimen>
+    <dimen name="video_size">360.0dip</dimen>
+    <dimen name="image_preference_height">130.0dip</dimen>
+    <dimen name="btn_padding">8.0dip</dimen>
+    <dimen name="btn_padding_horiz">10.0dip</dimen>
+    <dimen name="btn_stroke">1.0dip</dimen>
+    <dimen name="corner_radius">2.5dip</dimen>
+    <dimen name="tabbar_height">48.0dip</dimen>
+    <dimen name="home_pager_margin">10.0dip</dimen>
+    <dimen name="list_preferred_height">44.0dip</dimen>
+    <dimen name="divider_thickness">1.0dip</dimen>
+    <dimen name="feed_item_button_height">41.0dip</dimen>
+    <dimen name="feed_item_button_width">61.0dip</dimen>
+    <dimen name="capture_top_mask">71.0dip</dimen>
+</resources>

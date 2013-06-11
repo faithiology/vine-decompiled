@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/caption_preview_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <ImageView android:id="@id/image_preview" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_marginTop="@dimen/spacing_small" android:layout_marginRight="@dimen/spacing_small" android:layout_alignParentRight="true" />
+        <EditText android:gravity="top" android:id="@id/caption" android:layout_height="89.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="@dimen/spacing_small" android:layout_marginRight="8.0dip" android:hint="@string/post_hint" android:lines="4" android:layout_toLeftOf="@id/image_preview" style="@style/EditText" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ShareItem">
+        <View android:id="@id/vine_divider" android:background="@color/dark_list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/post_to_vine_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/vine_divider" style="@style/ShareItem.Outer">
+            <co.vine.android.widget.TypefacesTextView android:id="@id/post_to_vine_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_to_vine" style="@style/ShareItem.Text" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/vine_divider" android:layout_centerVertical="true">
+                <Switch android:id="@id/post_to_vine_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/VineSwitch" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@id/twitter_divider" android:background="@color/dark_list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/post_to_vine_container" />
+        <RelativeLayout android:id="@id/post_to_twitter_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/twitter_divider" style="@style/ShareItem.Outer">
+            <co.vine.android.widget.TypefacesTextView android:id="@id/post_to_twitter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_to_twitter" style="@style/ShareItem.Text" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/vine_divider" android:layout_centerVertical="true">
+                <Switch android:id="@id/post_to_twitter_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/VineSwitch" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="@color/dark_list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/post_to_twitter_container" />
+    </RelativeLayout>
+</LinearLayout>

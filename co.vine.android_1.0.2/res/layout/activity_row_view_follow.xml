@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:addStatesFromChildren="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UserListRow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/user_image" android:layout_width="@dimen/user_image_size" android:layout_height="@dimen/user_image_size" android:layout_marginRight="@dimen/list_row_padding" android:scaleType="centerCrop" android:layout_alignParentLeft="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/text_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/user_image">
+        <co.vine.android.widget.TypefacesTextView android:id="@id/content_line" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ActivityContent" />
+        <co.vine.android.widget.TypefacesTextView android:id="@id/byline" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Byline" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NoTitleBar" parent="@*android:style/Theme.NoTitleBar" />
+    <style name="Theme" parent="@*android:style/Theme.Holo.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:dropDownListViewStyle">@style/Theme.VineActionBar.DropDownListView</item>
+        <item name="android:textColorLink">@color/link_color</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <item name="android:actionBarStyle">@style/Theme.VineActionBar</item>
+        <item name="android:selectableItemBackground">@drawable/bg_selectable_item</item>
+        <item name="android:actionMenuTextColor">@drawable/action_bar_text_selector</item>
+    </style>
+    <style name="Theme.Home" parent="@style/Theme">
+        <item name="android:actionBarStyle">@style/Theme.VineActionBarHome</item>
+    </style>
+    <style name="Theme.VineActionBar" parent="@*android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:icon">@drawable/btn_v</item>
+        <item name="android:background">@drawable/bg_action_bar</item>
+        <item name="android:displayOptions">showHome|homeAsUp</item>
+        <item name="android:titleTextStyle">@style/Theme.ActionBarVine.TextStyle</item>
+        <item name="android:actionBarItemBackground">@drawable/bg_action_bar</item>
+    </style>
+    <style name="Theme.VineActionBar.DropDownListView" parent="@*android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/bg_action_bar_overflow</item>
+    </style>
+    <style name="Theme.VineActionBarHome" parent="@style/Theme.VineActionBar">
+        <item name="android:icon">@drawable/ic_home_logo</item>
+        <item name="android:background">@drawable/action_bar_top_level</item>
+        <item name="android:displayOptions">showHome</item>
+        <item name="android:actionBarItemBackground">@drawable/action_bar_top_level</item>
+    </style>
+    <style name="Theme.Preference" parent="@style/Theme" />
+    <style name="Theme.ActionBarVine.TextStyle" parent="@*android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/solid_white</item>
+    </style>
+    <style name="Theme.Dialog" parent="@*android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTitleStyle">@*android:style/TextAppearance.Large</item>
+        <item name="android:textSize">@dimen/font_size_xlarge</item>
+    </style>
+    <style name="Theme.Dialog.Dark" parent="@*android:style/Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTitleStyle">@*android:style/TextAppearance.Large</item>
+        <item name="android:textSize">@dimen/font_size_xlarge</item>
+    </style>
+    <style name="VineNormal">
+        <item name="android:background">@color/bg_normal</item>
+    </style>
+    <style name="SignInLabel">
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:background">@color/clear</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">@dimen/list_row_padding</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="EditText">
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textColorHint">@color/text_color_hint</item>
+        <item name="android:background">@drawable/bg_textfield</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="EditText.SignIn" parent="@style/EditText">
+        <item name="android:gravity">right</item>
+        <item name="android:paddingLeft">100.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/list_row_padding</item>
+        <item name="android:layout_marginRight">@dimen/list_row_padding</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="EditText.SignUp" parent="@style/EditText">
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/list_row_padding</item>
+        <item name="android:layout_marginRight">@dimen/list_row_padding</item>
+    </style>
+    <style name="EditText.Comment" parent="@style/EditText">
+        <item name="android:textColorHint">@color/comment_edit_text_hint</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="InsetText">
+        <item name="android:shadowColor">@color/solid_white</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+    <style name="SignupTOS">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/text_fineprint</item>
+        <item name="android:textColorLink">@color/text_fineprint</item>
+    </style>
+    <style name="ActivityAnimation" parent="@*android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>
+    </style>
+    <style name="Toolbar">
+        <item name="android:background">@drawable/tool_bar_background</item>
+        <item name="android:padding">@dimen/standard_spacing</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">46.0dip</item>
+    </style>
+    <style name="ButtonBase">
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:padding">@dimen/btn_padding</item>
+        <item name="android:paddingLeft">@dimen/btn_padding_horiz</item>
+        <item name="android:paddingRight">@dimen/btn_padding_horiz</item>
+        <item name="android:minWidth">36.0dip</item>
+        <item name="android:minHeight">36.0dip</item>
+    </style>
+    <style name="Button" parent="@style/ButtonBase">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_text</item>
+    </style>
+    <style name="TabButton">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/profile_tab_number_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_tab_bg</item>
+        <item name="android:padding">@dimen/btn_padding</item>
+        <item name="android:paddingLeft">@dimen/btn_padding_horiz</item>
+        <item name="android:paddingRight">@dimen/btn_padding_horiz</item>
+        <item name="android:minWidth">36.0dip</item>
+        <item name="android:height">48.0dip</item>
+        <item name="textWeight">3</item>
+        <item name="textStyle">0</item>
+    </style>
+    <style name="Button.FindFriends" parent="@style/Button">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/solid_white</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_small</item>
+        <item name="android:layout_marginRight">@dimen/spacing_small</item>
+    </style>
+    <style name="SignUpButton">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_small</item>
+        <item name="android:layout_marginRight">@dimen/spacing_small</item>
+    </style>
+    <style name="Button.Capture" parent="@style/Button">
+        <item name="android:textSize">@dimen/font_size_xlarge</item>
+        <item name="android:textColor">@color/solid_white</item>
+        <item name="android:background">@drawable/btn_capture</item>
+    </style>
+    <style name="Indicator">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/tab_item_title</item>
+        <item name="android:shadowColor">@color/solid_black</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.5</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="FindFriendsIndicator">
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="ListRow">
+        <item name="android:paddingLeft">@dimen/list_row_padding</item>
+        <item name="android:paddingTop">@dimen/list_row_padding</item>
+        <item name="android:paddingRight">@dimen/list_row_padding</item>
+        <item name="android:paddingBottom">@dimen/list_row_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/list_preferred_height</item>
+    </style>
+    <style name="ListHeader">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/solid_white</item>
+        <item name="android:padding">@dimen/spacing_small</item>
+    </style>
+    <style name="ListSubtitle">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_byline</item>
+        <item name="android:background">@color/solid_white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="ListBase" parent="@*android:style/Widget.ListView.White">
+        <item name="android:background">@color/bg_list</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@color/clear</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">@color/bg_list</item>
+        <item name="android:divider">@color/list_divider_color</item>
+        <item name="android:dividerHeight">@dimen/divider_thickness</item>
+    </style>
+    <style name="List" parent="@style/ListBase" />
+    <style name="List.Refreshable" parent="@style/List">
+        <item name="android:footerDividersEnabled">true</item>
+        <item name="refreshHeader">@layout/pull_to_refresh</item>
+        <item name="refreshFooter">@layout/list_footer_view</item>
+        <item name="pullText">@string/refresh_pull_down</item>
+        <item name="loadingText">@string/loading</item>
+        <item name="pullBackgroundColor">@color/bg_refresh_header</item>
+        <item name="rotateUpAnim">@anim/rotate_up</item>
+        <item name="rotateDownAnim">@anim/rotate_down</item>
+    </style>
+    <style name="Dot">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/text_fineprint</item>
+        <item name="android:text">@string/dot</item>
+    </style>
+    <style name="Byline">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/text_byline</item>
+        <item name="android:textColorLink">@color/link_color</item>
+        <item name="android:paddingTop">2.0dip</item>
+    </style>
+    <style name="UserListRow">
+        <item name="android:textColor">@color/list_item_text</item>
+        <item name="android:background">@drawable/bg_user_row</item>
+        <item name="android:padding">@dimen/spacing_small</item>
+    </style>
+    <style name="Username">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TimelineUsername">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:textColor">@color/vine_green</item>
+    </style>
+    <style name="TimelineText">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:textColor">@color/timeline_text</item>
+        <item name="textWeight">1</item>
+        <item name="textStyle">0</item>
+    </style>
+    <style name="TimelineCaption">
+        <item name="android:textSize">@dimen/font_size_xlarge</item>
+        <item name="android:textColor">@color/timeline_text</item>
+        <item name="textWeight">1</item>
+        <item name="textStyle">0</item>
+    </style>
+    <style name="TimelineLocation">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/timeline_timestamp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="textWeight">2</item>
+        <item name="textStyle">0</item>
+    </style>
+    <style name="TimelineTimestamp">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/timeline_timestamp</item>
+        <item name="textWeight">2</item>
+        <item name="textStyle">0</item>
+    </style>
+    <style name="TimelineOlderComments">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/timeline_timestamp</item>
+        <item name="textWeight">3</item>
+        <item name="textStyle">0</item>
+    </style>
+    <style name="ProfileText">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/text_profile</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/standard_spacing</item>
+        <item name="android:paddingRight">@dimen/standard_spacing</item>
+        <item name="textWeight">1</item>
+        <item name="textStyle">0</item>
+    </style>
+    <style name="ProfileText.Title" parent="@style/ProfileText">
+        <item name="android:textSize">@dimen/font_size_xxxlarge</item>
+        <item name="android:textColor">@color/solid_white</item>
+        <item name="textWeight">4</item>
+        <item name="textStyle">0</item>
+    </style>
+    <style name="ProfileTextCount">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/text_profile</item>
+        <item name="textWeight">2</item>
+        <item name="textStyle">0</item>
+    </style>
+    <style name="ShareItem">
+        <item name="android:background">@color/share_bottom_bg</item>
+    </style>
+    <style name="ShareItem.Text" parent="@style/ShareItem">
+        <item name="android:textSize">@dimen/font_size_xlarge</item>
+        <item name="android:textColor">@color/timeline_text</item>
+        <item name="android:paddingLeft">@dimen/standard_spacing</item>
+        <item name="android:paddingTop">20.0dip</item>
+        <item name="android:paddingBottom">20.0dip</item>
+        <item name="textWeight">3</item>
+    </style>
+    <style name="ShareItem.Outer" parent="@style/ShareItem">
+        <item name="android:paddingLeft">@dimen/standard_spacing</item>
+        <item name="android:paddingRight">@dimen/standard_spacing</item>
+    </style>
+    <style name="VineSwitch">
+        <item name="android:textColor">@color/solid_white</item>
+        <item name="android:textColorHint">@color/solid_white</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="android:track">@drawable/switch_bg</item>
+    </style>
+    <style name="ActivityContent">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="textWeight">1</item>
+        <item name="textStyle">0</item>
+    </style>
+</resources>

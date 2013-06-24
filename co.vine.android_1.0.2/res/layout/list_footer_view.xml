@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:id="@id/footer_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
-    <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_thickness" android:layout_alignParentTop="true" />
-</RelativeLayout>
